@@ -25,20 +25,37 @@ export default new Router({
     {
       path: '/list',
       name: 'list',
-      component: () =>
-        import(/* webpackChunkName: "about" */ './views/List.vue')
+      component: () => import(/* webpackChunkName: "list" */ './views/List.vue')
     },
     {
       path: '/drawer',
       name: 'drawer',
       component: () =>
-        import(/* webpackChunkName: "about" */ './views/Drawer.vue')
+        import(/* webpackChunkName: "drawer" */ './views/Drawer.vue')
     },
     {
       path: '/cards',
       name: 'cards',
       component: () =>
-        import(/* webpackChunkName: "about" */ './views/Cards.vue')
+        import(/* webpackChunkName: "cards" */ './views/Cards.vue')
+    },
+    {
+      path: '/simple',
+      name: 'simple',
+      component: () =>
+        import(/* webpackChunkName: "simple" */ './views/Simple.vue')
+    },
+    {
+      path: '/stagger',
+      name: 'stagger',
+      component: () =>
+        import(/* webpackChunkName: "stagger" */ './views/Stagger.vue')
+    },
+    {
+      path: '/state',
+      name: 'state',
+      component: () =>
+        import(/* webpackChunkName: "state" */ './views/State.vue')
     }
   ]
 });

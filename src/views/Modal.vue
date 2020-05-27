@@ -15,12 +15,12 @@ export default {
   data() {
     return {
       isOpen: false
-    }
+    };
   },
   methods: {
     toggleModal() {
-      this.isOpen = !this.isOpen
+      this.isOpen = !this.isOpen;
     }
   }
-}
+};
 </script>

@@ -18,16 +18,16 @@ export default {
     return {
       newContact: '',
       contacts: ['Beau Thabeast', 'Cindy Rella', 'Alice Vunderlind']
-    }
+    };
   },
   methods: {
     addContact() {
-      this.contacts.push(this.newContact)
-      this.newContact = ''
+      this.contacts.push(this.newContact);
+      this.newContact = '';
     },
     sortContact() {
-      this.contacts.sort()
+      this.contacts.sort();
     }
   }
-}
+};
 </script>
