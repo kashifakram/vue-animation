@@ -7,13 +7,16 @@
 </template>
 
 <script>
-import gsap from 'gsap'
+import gsap from 'gsap';
 
 export default {
   mounted() {
-    // timeline will go here
+    const tl = gsap.timeline({ repeat: -1 });
+    tl.to('.first', { x: 700, duration: 2, ease: 'expo.out' });
+    tl.to('.second', { x: 700, duration: 2, ease: 'expo.out' }, '<0.7');
+    tl.to('.third', { x: 700, duration: 2, ease: 'expo.out' }, '<');
   }
-}
+};
 </script>
 
 <style scoped>
